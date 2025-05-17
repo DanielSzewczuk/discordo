@@ -1,11 +1,11 @@
 #!/bin/bash
 
 version=1.0.0
-latest=$(curl -fsL 'https://discordo.dlsk.tech/VERSION' || echo $version)
+latest=$(curl -fsL 'https://discordo.szewczuk.io/VERSION' || echo $version)
 
 if awk "BEGIN {exit !($version < $latest)}"; then
     echo 'There is a new version of Discordo available. Please run:'
-    echo "curl -fsSL 'https://discordo.dlsk.tech/install.sh' | sudo bash"
+    echo "curl -fsSL 'https://discordo.szewczuk.io/install.sh' | sudo bash"
     exit 1
 fi
 
