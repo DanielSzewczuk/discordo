@@ -30,6 +30,6 @@ if [ ! -d "/usr/bin" ]; then
     echo 'Make sure to add /usr/bin to $PATH'
 fi
 
-curl -fsL 'https://discordo.dlsk.tech/discordo.sh' -o /usr/bin/discordo || echo 'Failed to download Discordo'
+curl -fsL 'https://discordo.szewczuk.io/discordo.sh' -o /usr/bin/discordo || echo 'Failed to download Discordo'
 sudo chmod +x /usr/bin/discordo
 echo 'Installed Discordo!'
